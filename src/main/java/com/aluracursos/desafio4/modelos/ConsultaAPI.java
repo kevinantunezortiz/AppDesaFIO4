@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ConsultaAPI {
 
-    public HttpResponse obtenerRespuesta(int numeroDePelicula)  {
+    public String obtenerJson(int numeroDePelicula)  {
         String direccion ="https://swapi.py4e.com/api/films/"+numeroDePelicula+"/";
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -21,6 +21,6 @@ public class ConsultaAPI {
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
-        return response;
+        return response.body().toString();
     }
 }
