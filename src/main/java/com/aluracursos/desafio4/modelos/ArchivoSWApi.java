@@ -8,10 +8,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
-public class SWApiArchivo {
+public class ArchivoSWApi {
     private Gson gson;
 
-    public SWApiArchivo() {
+    public ArchivoSWApi() {
         gson =  new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
                 .setPrettyPrinting()

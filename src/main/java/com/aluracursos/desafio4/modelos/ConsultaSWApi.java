@@ -6,7 +6,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class ConsultaAPI {
+public class ConsultaSWApi {
 
     public String obtenerJson(int numeroDePelicula)  {
         String direccion ="https://swapi.py4e.com/api/films/"+numeroDePelicula+"/";

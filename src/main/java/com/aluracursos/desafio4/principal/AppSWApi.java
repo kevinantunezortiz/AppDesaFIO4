@@ -1,14 +1,14 @@
 package com.aluracursos.desafio4.principal;
 
-import com.aluracursos.desafio4.modelos.ConsultaAPI;
-import com.aluracursos.desafio4.modelos.SWApiArchivo;
+import com.aluracursos.desafio4.modelos.ConsultaSWApi;
+import com.aluracursos.desafio4.modelos.ArchivoSWApi;
 
 import java.util.Scanner;
 
-public class app {
+public class AppSWApi {
     public static void main(String[] args) {
-        var consultaAPI = new ConsultaAPI();
-        var conversorJson = new SWApiArchivo();
+        var consultaAPI = new ConsultaSWApi();
+        var conversorJson = new ArchivoSWApi();
         Scanner teclado = new Scanner(System.in);
         System.out.println("Escribe el numero de una pelicula");
         String json = consultaAPI.obtenerJson(teclado.nextInt());
