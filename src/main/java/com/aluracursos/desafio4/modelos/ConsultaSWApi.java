@@ -21,6 +21,6 @@ public class ConsultaSWApi {
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
-        return response.body().toString();
+        return response.body();
     }
 }
