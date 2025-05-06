@@ -9,7 +9,7 @@ import java.io.IOException;
 
 
 public class ArchivoSWApi {
-    private Gson gson;
+    private final Gson gson;
 
     public ArchivoSWApi() {
         gson =  new GsonBuilder()
